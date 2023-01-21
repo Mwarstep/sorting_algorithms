@@ -45,7 +45,7 @@ void counting_sort(int *array, size_t size)
 	for (j = 0; j < size; j++)
 	{
 		array[count[copy[j]]] = copy[j];
-		cout[copy[j]] += 1;
+		count[copy[j]] += 1;
 	}
 	print_array(count, max + 1);
 	free(count);
