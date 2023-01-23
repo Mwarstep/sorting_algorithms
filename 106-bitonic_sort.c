@@ -62,7 +62,7 @@ void bit_sort(char up, int *array, size_t size, size_t t)
 	bit_sort(1, array, size / 2, t);
 	bit_sort(0, array + (size / 2), size / 2, t);
 	bitonic_merge(up, array, size);
-	printf("Result [%lu/%lu] (%s):\n", t, (up == 1) ? "UP" : "DOWN");
+	printf("Result [%lu/%lu] (%s):\n", size, t, (up == 1) ? "UP" : "DOWN");
 	print_array(array, size);
 
 }
